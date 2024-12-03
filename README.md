@@ -151,3 +151,8 @@ Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido apó
    **Exemplo de Uso:**
       Selecione DELETE, insira a URL com o ID da transação que deseja deletar e adicione os cabeçalhos necessários. Clique em "Send" para deletar a transação.
 
+🧪 Testes
+
+    Utilize ferramentas como Postman ou Insomnia para testar as rotas da API.
+    Após clonar e configurar o projeto, você pode simular diferentes cenários para garantir que todas as funcionalidades estão funcionando corretamente.
+
