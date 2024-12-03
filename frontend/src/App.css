@@ -1,0 +1,243 @@
+/* Estilo global */
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Centralização do conteúdo */
+.container {
+  max-width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-message {
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 5px;
+  max-width: 400px; /* Limita a largura da mensagem */
+  text-align: center; /* Centraliza o texto */
+}
+
+.success {
+  background-color: #d4edda; /* Verde claro */
+  color: #155724; /* Texto verde escuro */
+  border: 1px solid #c3e6cb; /* Borda verde */
+}
+
+.error {
+  background-color: #f8d7da; /* Vermelho claro */
+  color: #721c24; /* Texto vermelho escuro */
+  border: 1px solid #f5c6cb; /* Borda vermelha */
+}
+
+/* Formulário de transação */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+form input,
+form select,
+form button {
+  width: 60%; /* Botões e campos mais estreitos */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de transações */
+.transaction-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item-details {
+  flex-grow: 1;
+}
+
+.transaction-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.transaction-item button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.transaction-item .delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.transaction-item .edit-button {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Reduzir botões no hover */
+.transaction-item button:hover {
+  opacity: 0.9;
+}
+
+/* src/components/LoginForm.css */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.login-form .message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* src/components/RegisterForm.css */
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-form .form-group {
+  margin-bottom: 15px;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-form button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+
+/* Adaptação para telas pequenas */
+@media (max-width: 600px) {
+  form input,
+  form select,
+  form button {
+    width: 90%;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
