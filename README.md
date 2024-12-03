@@ -131,7 +131,7 @@ Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido apó
 
 Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
 
-    **Corpo da Requisição (JSON)**:
+   **Corpo da Requisição (JSON)**:
 {
   "description": "Compra de supermercado - atualizado",
   "amount": 200.00,
