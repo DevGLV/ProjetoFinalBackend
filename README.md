@@ -116,7 +116,8 @@ Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido apó
 **Cabeçalhos:**
 
 Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
--Exemplo de Uso:
+
+**Exemplo de Uso:**
 -Selecione GET, insira a URL e adicione os cabeçalhos necessários. Clique em "Send" para obter a lista de transações.
 
 ### 5. Editar Transações
@@ -129,6 +130,7 @@ Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido apó
 **Cabeçalhos:**
 
 Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
+
     **Corpo da Requisição (JSON)**:
 {
   "description": "Compra de supermercado - atualizado",
@@ -145,6 +147,7 @@ Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido apó
  **Cabeçalhos:**
 
 Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
-    Exemplo de Uso:
-        Selecione DELETE, insira a URL com o ID da transação que deseja deletar e adicione os cabeçalhos necessários. Clique em "Send" para deletar a transação.
+
+   **Exemplo de Uso:**
+      Selecione DELETE, insira a URL com o ID da transação que deseja deletar e adicione os cabeçalhos necessários. Clique em "Send" para deletar a transação.
 
