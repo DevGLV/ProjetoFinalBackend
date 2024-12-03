@@ -70,33 +70,30 @@ A maioria das rotas requer autenticação com um token JWT. O token deve ser inc
   "password": "senhaSegura"
 }
 
+### 2. Login
 
+- **Método**: `POST`  
+- **URL**: `/api/users/login`  
+  **Exemplo de URL**: `http://localhost:3000/api/users/login`  
+- **Descrição**: Login do usuário.
 
-2. Login
-
-    Método: POST
-    URL: /api/users/login
-    Descrição: Autentica o usuário e retorna um token JWT.
-
-Exemplo de Corpo da Requisição:
+**Corpo da Requisição (JSON)**:
 
 {
   "email": "novo_usuario@example.com",
   "password": "senhaSegura"
 }
 
-Rotas de Transações
-3. Criar Transação
+Selecione POST, insira a URL e cole o corpo JSON. Clique em "Send" para fazer login. O servidor deve retornar um token JWT se o login for bem-sucedido.
 
-    Método: POST
-    URL: /api/transactions
-    Descrição: Cria uma nova transação.
+### 3. Criar Transação
 
-Cabeçalhos:
+- **Método**: `POST`  
+- **URL**: `/api/transactions`  
+  **Exemplo de URL**: `http://localhost:3000/api/transactions`  
+- **Descrição**: Criar Transação.
 
-Authorization: Bearer SEU_TOKEN_AQUI
-
-Exemplo de Corpo da Requisição:
+**Corpo da Requisição (JSON)**:
 
 {
   "description": "Compra no supermercado",
@@ -105,50 +102,49 @@ Exemplo de Corpo da Requisição:
   "type": "saída"
 }
 
-   
+**Cabeçalhos:**
 
-3. Criar Transação
+Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
 
-    Método: POST
-    URL: http://localhost:3000/api/transactions
-    Cabeçalhos:
-        Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
-    Corpo (JSON):
-{
-  "description": "Compra no supermercado",
-  "amount": 150,
-  "date": "2024-01-01",
-  "type": "saída"
-}
-4. Ver Transações
+### 4. Ver Transações
 
-    Método: GET
-    URL: http://localhost:3000/api/transactions
-    Cabeçalhos:
-        Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido)
-    Exemplo de Uso:
+- **Método**: `GET`  
+- **URL**: `/api/transactions`  
+  **Exemplo de URL**: `http://localhost:3000/api/transactions`  
+- **Descrição**: List transactions.
+
+**Cabeçalhos:**
+
+Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
+Exemplo de Uso:
         Selecione GET, insira a URL e adicione os cabeçalhos necessários. Clique em "Send" para obter a lista de transações.
 
-   5. Editar Transação
+### 5. Editar Transações
 
-    Método: PUT
-    URL: http://localhost:3000/api/transactions/:id (substitua :id pelo ID da transação que você deseja editar)
-    Cabeçalhos:
-        Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido)
-    Corpo (JSON):
+- **Método**: `PUT`  
+- **URL**: `/api/transactions`  
+  **Exemplo de URL**: `http://localhost:3000/api/transactions/:id` (substitua :id pelo ID da transação que você deseja editar)
+- **Descrição**: Editar.
+
+**Cabeçalhos:**
+
+Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
+    **Corpo da Requisição (JSON)**:
 {
   "description": "Compra de supermercado - atualizado",
   "amount": 200.00,
   "type": "saída",
   "date": "2024-12-02T00:00:00Z"
 }
+### 6. Deletar Transação
 
-6. Deletar Transação
+- **Método**: `DELETE`  
+- **URL**: `/api/transactions`  
+  **Exemplo de URL**: `http://localhost:3000/api/transactions/:id` (substitua :id pelo ID da transação que você deseja deletar)
+- **Descrição**: Deletar.
+ **Cabeçalhos:**
 
-    Método: DELETE
-    URL: http://localhost:3000/api/transactions/:id (substitua :id pelo ID da transação que você deseja deletar)
-    Cabeçalhos:
-        Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido)
+Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
     Exemplo de Uso:
         Selecione DELETE, insira a URL com o ID da transação que deseja deletar e adicione os cabeçalhos necessários. Clique em "Send" para deletar a transação.
 
