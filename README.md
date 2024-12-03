@@ -116,8 +116,8 @@ Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido apó
 **Cabeçalhos:**
 
 Authorization: Bearer SEU_TOKEN_AQUI (substitua por um token válido obtido após o login)
-Exemplo de Uso:
-        Selecione GET, insira a URL e adicione os cabeçalhos necessários. Clique em "Send" para obter a lista de transações.
+-Exemplo de Uso:
+-Selecione GET, insira a URL e adicione os cabeçalhos necessários. Clique em "Send" para obter a lista de transações.
 
 ### 5. Editar Transações
 
